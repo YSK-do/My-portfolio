@@ -1,2 +1,3 @@
-# My-portfolio
-HTMLno
+# ポートフォリオ
+HTMLとCSSを勉強したため、自己紹介ページを作成しました。
+今後はjavaとPythonの作品を結合予定
