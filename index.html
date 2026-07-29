@@ -8,19 +8,19 @@
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
+    <h1>My Portfolio <span>ポートフォリオ</span></h1>
     <nav aria-label="メインナビゲーション">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About / 自己紹介</a></li>
+        <li><a href="#works">Works / 制作物</a></li>
+        <li><a href="#contact">Contact / 連絡先</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="about">
-      <h2>About Me</h2>
+      <h2>About Me <span>/ 自己紹介</span></h2>
       <p>
         滋賀県在住。前職では事務職を経験し、業務上の課題をITで解決できる
         エンジニアを目指しています。現在はJavaとSpring Bootを中心に学習しています。
@@ -32,21 +32,39 @@
     </section>
 
     <section id="works">
-      <h2>My Works</h2>
+      <h2>My Works <span>/ 制作物</span></h2>
       <div class="work">
         <h3>勤怠・給与計算システム</h3>
         <a href="https://timecard-payroll-system.onrender.com"
            target="_blank"
-           rel="noopener noreferrer">
+           rel="noopener noreferrer"
+           class="work-image-link"
+           aria-label="勤怠・給与計算システムのデモを新しいタブで開く">
           <img class="work-image"
                src="timecard-payroll-system.png"
                alt="勤怠・給与計算システムの勤務時間入力画面">
         </a>
-        <p>
-          JavaとSpring Bootで制作した、個人向けの勤怠管理・給与概算Webアプリケーションです。
-          勤務時間の登録、実働・残業時間と給与の計算、月間集計、CSV保存に対応しています。
+        <p class="image-link-guide">画像をクリックしてデモを開く（新しいタブ）</p>
+        <p class="work-summary">
+          勤務時間を入力すると、実働時間・残業時間・給与概算を自動計算し、
+          月単位で確認できるWebアプリです。
         </p>
-        <p><strong>使用技術：</strong>Java 17 / Spring Boot / JavaScript / HTML / CSS / Maven / JUnit / Render</p>
+        <p>
+          JavaとSpring Bootで制作し、勤務時間の登録、月間集計、CSV保存に対応しています。
+        </p>
+        <div class="technology-list" aria-label="使用技術">
+          <strong>使用技術</strong>
+          <ul>
+            <li>Java 17</li>
+            <li>Spring Boot</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Maven</li>
+            <li>JUnit</li>
+            <li>Render</li>
+          </ul>
+        </div>
         <h4>工夫した点</h4>
         <ul>
           <li>前職で感じた課題をもとに、働いた時間と給与を確認しやすい形にしました。</li>
@@ -74,7 +92,7 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2>Contact <span>/ 連絡先</span></h2>
       <p>
         ソースコードや学習内容は
         <a href="https://github.com/YSK-do"
