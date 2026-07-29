@@ -38,4 +38,12 @@ h2:before {
     z-index: -1;
 }
 
-   
+.work-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 12px 0;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+}
