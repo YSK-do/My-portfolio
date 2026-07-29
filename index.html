@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header>
+  <header>
     <h1>My Portfolio</h1>
     <nav>
       <ul>
@@ -18,13 +18,20 @@
     </nav>
   </header>
 
-   <main>
+  <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>私はWeb制作を学習中の〇〇です。HTMLとCSSを中心に勉強しています。</p>
+      <p>
+        滋賀県在住。前職では事務職を経験し、業務上の課題をITで解決できる
+        エンジニアを目指しています。現在はJavaとSpring Bootを中心に学習しています。
+      </p>
+      <p>
+        前職で感じた勤怠管理の課題をきっかけに、働いた時間と給与の概算を
+        自分で確認できる「勤怠・給与計算システム」を制作しました。
+      </p>
     </section>
 
-     <section id="works">
+    <section id="works">
       <h2>My Works</h2>
       <div class="work">
         <h3>勤怠・給与計算システム</h3>
@@ -35,32 +42,44 @@
                src="timecard-payroll-system.png"
                alt="勤怠・給与計算システムの勤務時間入力画面">
         </a>
-        <p>勤怠時間の入力と給与計算ができるWebアプリケーションです。</p>
+        <p>
+          JavaとSpring Bootで制作した、個人向けの勤怠管理・給与概算Webアプリケーションです。
+          勤務時間の登録、実働・残業時間と給与の計算、月間集計、CSV保存に対応しています。
+        </p>
+        <h4>工夫した点</h4>
+        <ul>
+          <li>前職で感じた課題をもとに、働いた時間と給与を確認しやすい形にしました。</li>
+          <li>PC操作が苦手な方でも迷いにくい、シンプルな入力画面を意識しました。</li>
+          <li>今月・前月を選んで登録でき、同じ日付・氏名のデータは上書きできるようにしました。</li>
+          <li>計算処理やCSV保存、月間集計にJUnitテストを追加しました。</li>
+        </ul>
         <p>
           <a href="https://timecard-payroll-system.onrender.com"
              target="_blank"
              rel="noopener noreferrer">公開サイトを見る</a>
+          ｜
+          <a href="https://github.com/YSK-do/TimeCard-Payroll-System"
+             target="_blank"
+             rel="noopener noreferrer">GitHubでソースコードを見る</a>
         </p>
-      </div>
-      <div class="work">
-        <img src="work1.png" alt="作品1">
-        <p>自己紹介ページの模写練習を行いました。</p>
-      </div>
-      <div class="work">
-        <img src="work2.png" alt="作品2">
-        <p>トップページデザインを練習しました。</p>
       </div>
     </section>
 
-     <section id="contact">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>お問い合わせは <a href="mailto:example@example.com">こちら</a> まで。</p>
+      <p>
+        ソースコードや学習内容は
+        <a href="https://github.com/YSK-do"
+           target="_blank"
+           rel="noopener noreferrer">GitHubプロフィール</a>
+        からご覧いただけます。
+      </p>
+      <p>応募に関するご連絡は、応募サービス内の連絡機能をご利用ください。</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 My Portfolio</p>
   </footer>
-    
 </body>
 </html>
