@@ -31,6 +31,13 @@ h1 {
     text-align: center;
 }
 
+h1 span {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.34em;
+    font-weight: normal;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -70,6 +77,11 @@ h2 {
     padding-left: 14px;
 }
 
+h2 span {
+    font-size: 0.72em;
+    font-weight: normal;
+}
+
 h2::before {
     content: "";
     position: absolute;
@@ -87,14 +99,71 @@ a {
     color: #006f9e;
 }
 
+.work-image-link {
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.work-image-link:hover,
+.work-image-link:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(36, 80, 106, 0.22);
+    outline: 3px solid transparent;
+}
+
+.work-image-link:focus-visible {
+    outline-color: #006f9e;
+    outline-offset: 3px;
+}
+
 .work-image {
     display: block;
     width: 100%;
     max-width: 900px;
     height: auto;
-    margin: 12px 0;
+    margin: 12px 0 0;
     border: 1px solid #d9e2ec;
     border-radius: 8px;
+}
+
+.image-link-guide {
+    margin: 6px 0 18px;
+    color: #526875;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.work-summary {
+    font-weight: bold;
+}
+
+.technology-list {
+    margin: 18px 0;
+}
+
+.technology-list > strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.technology-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.technology-list li {
+    padding: 4px 10px;
+    background-color: #e6f6ff;
+    color: #24506a;
+    border: 1px solid #b9e4f7;
+    border-radius: 999px;
+    font-size: 0.9rem;
 }
 
 .demo-notice {
