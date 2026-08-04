@@ -99,6 +99,20 @@ a {
     color: #006f9e;
 }
 
+.work {
+    padding-block: 8px 32px;
+}
+
+.work + .work {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 2px solid #d9eaf3;
+}
+
+.work h3 {
+    margin-top: 0;
+}
+
 .work-image-link {
     display: block;
     border-radius: 8px;
