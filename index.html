@@ -89,6 +89,45 @@
           </p>
         </aside>
       </div>
+
+      <div class="work">
+        <h3>TimeCard Test Data Generator</h3>
+        <p class="work-summary">
+          勤怠・給与計算システムのテストを簡単に行うために、
+          勤務データを自動生成するPythonツールです。
+        </p>
+        <p>
+          1か月分または1年分の勤怠データをCSV形式で生成できるため、
+          大量のデータを手入力せずに月間集計や過去データ表示を確認できます。
+        </p>
+        <div class="technology-list" aria-label="使用技術">
+          <strong>使用技術</strong>
+          <ul>
+            <li>Python 3.10</li>
+            <li>unittest</li>
+            <li>CSV</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+        <h4>作成した理由</h4>
+        <ul>
+          <li>勤怠データを毎回手入力する手間を減らし、テストを簡単に行えるようにするためです。</li>
+          <li>Java版と同じCSV形式と給与計算式を使い、実際の動作に近いデータを準備できるようにしました。</li>
+          <li>同じ条件のデータを再現できるようにし、不具合の確認や修正後の再テストを行いやすくしました。</li>
+        </ul>
+        <h4>主な機能</h4>
+        <ul>
+          <li>1か月分または1年分の勤務データを生成できます。</li>
+          <li>氏名、時給、出勤率、土日の扱い、文字コードなどを指定できます。</li>
+          <li>乱数の種を指定し、同じテストデータを再生成できます。</li>
+          <li>給与計算やCSV形式をunittestで自動テストしています。</li>
+        </ul>
+        <p>
+          <a href="https://github.com/YSK-do/TimeCard-Test-Data-Generator"
+             target="_blank"
+             rel="noopener noreferrer">GitHubでソースコードを見る</a>
+        </p>
+      </div>
     </section>
 
     <section id="contact">
